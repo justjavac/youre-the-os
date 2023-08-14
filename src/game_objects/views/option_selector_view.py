@@ -14,7 +14,7 @@ class OptionSelectorView(Drawable):
         self._option_surfaces = []
         longest_option_id = 0
         for i, option in enumerate(self._option_selector.options):
-            self._option_surfaces.append(FONT_SECONDARY_MEDIUM.render(option.upper(), False, Color.WHITE))
+            self._option_surfaces.append(FONT_SECONDARY_MEDIUM.render(option.upper(), True, Color.WHITE))
             if len(option) > len(self._option_selector.options[longest_option_id]):
                 longest_option_id = i
         

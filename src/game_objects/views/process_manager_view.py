@@ -10,7 +10,7 @@ class ProcessManagerView(Drawable):
         self._process_manager = process_manager
         super().__init__()
              
-        self._idle_processes_text_surface = FONT_PRIMARY_LARGE.render('空闲进程:', False, Color.WHITE)
+        self._idle_processes_text_surface = FONT_PRIMARY_LARGE.render('空闲进程:', True, Color.WHITE)
         self._PROCESS_VIEW_HEIGHT = ProcessView(Process(0, process_manager.game)).height
 
     @property
@@ -27,7 +27,7 @@ class ProcessManagerView(Drawable):
             self._process_manager.MAX_TERMINATED_BY_USER
         )
         
-        terminated_processes_text_surface = FONT_PRIMARY_LARGE.render(terminated_processes_text, False, Color.WHITE)
+        terminated_processes_text_surface = FONT_PRIMARY_LARGE.render(terminated_processes_text, True, Color.WHITE)
         
         surface.blit(self._idle_processes_text_surface, (50, 120))
         surface.blit(terminated_processes_text_surface, (

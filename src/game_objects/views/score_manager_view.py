@@ -16,4 +16,4 @@ class ScoreManagerView(Drawable):
         return FONT_PRIMARY_MEDIUM.size('分数 : ' + format(self._score_manager.score, '09'))[1]
 
     def draw(self, surface):
-        surface.blit(FONT_PRIMARY_MEDIUM.render('分数 : ' + format(self._score_manager.score, '09'), False, Color.WHITE), (840, 10))
+        surface.blit(FONT_PRIMARY_MEDIUM.render('分数 : ' + format(self._score_manager.score, '09'), True, Color.WHITE), (840, 10))

@@ -7,7 +7,7 @@ from lib.ui.fonts import FONT_SECONDARY_XXXSMALL
 class PageView(Drawable):
     def __init__(self, page):
         self._page = page
-        self._pid_text_surface = FONT_SECONDARY_XXXSMALL.render('PID ' + str(self._page.pid), False, Color.BLACK)
+        self._pid_text_surface = FONT_SECONDARY_XXXSMALL.render('PID ' + str(self._page.pid), True, Color.BLACK)
         super().__init__()
         
     @property
