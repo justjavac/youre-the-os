@@ -135,7 +135,7 @@ _parts = [
     ),
     HowToPlayPart(
         [
-            u"如果在进行需呀交换内存页的时候你没有进行操作，那么这个进程最终会饿死。",
+            u"如果在进程需要交换内存页的时候你没有进行操作，那么这个进程最终会饿死。",
         ],
         [
             pygame.image.load(path.join('assets', 'how_to_play_13_0.png'))
