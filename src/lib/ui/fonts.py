@@ -3,7 +3,7 @@ import pygame
 
 pygame.font.init()
 
-FONT_PRIMARY_SMALL = pygame.font.SysFont("path.join('assets', 'SourceCodePro-Regular.ttf')", 14) 
+FONT_PRIMARY_SMALL = pygame.font.SysFont(path.join('assets', 'SourceCodePro-Regular.ttf'), 14) 
 FONT_PRIMARY_MEDIUM = pygame.font.SysFont(path.join('assets', 'SourceCodePro-Regular.ttf'), 20)
 FONT_PRIMARY_LARGE = pygame.font.SysFont(path.join('assets', 'SourceCodePro-Regular.ttf'), 24)
 FONT_PRIMARY_XLARGE = pygame.font.SysFont(path.join('assets', 'SourceCodePro-Regular.ttf'), 30)
