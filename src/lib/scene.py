@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from abc import ABC, abstractmethod
 import asyncio
 import pygame

@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from os import path
 import pygame
 
@@ -13,9 +15,9 @@ class GameOverDialogView(Drawable):
         
         self._image = _shutdown_image
         
-        self._main_text_surface = FONT_PRIMARY_XXLARGE.render('你重新启动了!', True, Color.WHITE)
-        self._uptime_text_surface = FONT_PRIMARY_LARGE.render('运行时间: ' + game_over_dialog.uptime, True, Color.WHITE)
-        self._score_text_surface = FONT_PRIMARY_LARGE.render('分数: ' + str(game_over_dialog.score), True, Color.WHITE)
+        self._main_text_surface = FONT_PRIMARY_XXLARGE.render(u'你重新启动了!', True, Color.WHITE)
+        self._uptime_text_surface = FONT_PRIMARY_LARGE.render(u'运行时间: ' + game_over_dialog.uptime, True, Color.WHITE)
+        self._score_text_surface = FONT_PRIMARY_LARGE.render(u'分数: ' + str(game_over_dialog.score), True, Color.WHITE)
 
     @property
     def width(self):

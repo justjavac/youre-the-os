@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from os import path
 import pygame
 
@@ -10,7 +12,7 @@ class DifficultySelectionLabelView(Drawable):
         self._difficulty_selection_label = difficulty_selection_label
         super().__init__()
         
-        self._text = FONT_SECONDARY_MEDIUM.render("选择游戏难度:", True, Color.WHITE)
+        self._text = FONT_SECONDARY_MEDIUM.render(u"选择游戏难度:", True, Color.WHITE)
 
     @property
     def width(self):

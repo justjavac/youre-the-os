@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 class Color:
     ALMOST_BLACK = (25, 25, 25)
     BLACK = (0, 0, 0)

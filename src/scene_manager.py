@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 class SceneManager():
     def __init__(self):
         self._current_scene = None

@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from math import inf
 from random import randint
 

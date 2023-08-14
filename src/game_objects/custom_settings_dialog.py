@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from difficulty_levels import default_difficulty
 from lib.game_object import GameObject
 from game_objects.button import Button
@@ -37,10 +39,10 @@ class CustomSettingsDialog(GameObject):
         self._num_ram_rows_selector.view.min_width = selector_width
         self._io_probability_selector.view.min_width = selector_width
         
-        self._start_button = Button('开始', start_fn)
+        self._start_button = Button(u'开始', start_fn)
         self.children.append(self._start_button)
         
-        self._cancel_button = Button('取消', cancel_fn)
+        self._cancel_button = Button(u'取消', cancel_fn)
         self.children.append(self._cancel_button)
 
     @property

@@ -1,5 +1,7 @@
+# -*- coding: utf-8 -*-
+
 _easy_difficulty = {
-    'name': '简单',
+    'name': u'简单',
     'config': {
         'num_cpus': 4,
         'num_processes_at_startup': 14,
@@ -10,7 +12,7 @@ _easy_difficulty = {
 }
 
 _normal_difficulty = {
-    'name': '一般',
+    'name': u'一般',
     'config': {
         'num_cpus': 4,
         'num_processes_at_startup': 14,
@@ -21,7 +23,7 @@ _normal_difficulty = {
 }
 
 _hard_difficulty = {
-    'name': '困难',
+    'name': u'困难',
     'config': {
         'num_cpus': 8,
         'num_processes_at_startup': 28,
@@ -32,7 +34,7 @@ _hard_difficulty = {
 }
 
 _harder_difficulty = {
-    'name': '非常困难',
+    'name': u'非常困难',
     'config': {
         'num_cpus': 12,
         'num_processes_at_startup': 35,
@@ -43,7 +45,7 @@ _harder_difficulty = {
 }
 
 _insane_difficulty = {
-    'name': '疯狂',
+    'name': u'疯狂',
     'config': {
         'num_cpus': 16,
         'num_processes_at_startup': 42,

@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from os import path
 import pygame
 from random import randint

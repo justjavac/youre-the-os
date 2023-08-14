@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from lib.game_object import GameObject
 from game_objects.button import Button
 from game_objects.views.in_game_menu_dialog_view import InGameMenuDialogView
@@ -7,9 +9,9 @@ class InGameMenuDialog(GameObject):
     def __init__(self, restart_game_fn, main_menu_fn, close_menu_fn):
         super().__init__(InGameMenuDialogView(self))
         
-        self._restartButton = Button('重新开始', restart_game_fn)
-        self._mainMenuButton = Button('返回主菜单', main_menu_fn)
-        self._closeMenuButton = Button('关闭', close_menu_fn)
+        self._restartButton = Button(u'重新开始', restart_game_fn)
+        self._mainMenuButton = Button(u'返回主菜单', main_menu_fn)
+        self._closeMenuButton = Button(u'关闭', close_menu_fn)
                 
         self.children.append(self._restartButton)
         self.children.append(self._mainMenuButton)

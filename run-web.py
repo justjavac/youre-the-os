@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import subprocess
 import sys
 
@@ -17,7 +19,7 @@ command = [
     'pygbag',
     '--app_name', 'youre_the_os',
     '--ume_block', '0',
-    '--title', "你是操作系统!",
+    '--title', u"你是操作系统!",
 ]
 
 if mode == BUILD:

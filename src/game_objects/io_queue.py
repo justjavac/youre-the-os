@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from queue import SimpleQueue
 from random import randint
 

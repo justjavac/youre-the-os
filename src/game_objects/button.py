@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from lib.game_event_type import GameEventType
 from lib.game_object import GameObject
 from game_objects.views.button_view import ButtonView

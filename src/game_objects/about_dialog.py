@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from difficulty_levels import default_difficulty
 from lib.game_object import GameObject
 from game_objects.button import Button
@@ -9,7 +11,7 @@ class AboutDialog(GameObject):
     def __init__(self, close_fn):
         super().__init__(AboutDialogView(self))
         
-        self._close_button = Button('关闭', close_fn)
+        self._close_button = Button(u'关闭', close_fn)
         self.children.append(self._close_button)
 
     def update(self, current_time, events):

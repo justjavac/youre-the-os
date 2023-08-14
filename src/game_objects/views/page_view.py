@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import pygame
 
 from lib.ui.color import Color

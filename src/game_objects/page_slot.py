@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from lib.game_object import GameObject
 from game_objects.views.page_slot_view import PageSlotView
 

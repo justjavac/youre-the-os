@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from lib.game_object import GameObject
 from game_objects.button import Button
 from game_objects.views.how_to_play_part_view import HowToPlayPartView

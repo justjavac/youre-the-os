@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from lib.drawable import Drawable
 
 class PageSlotView(Drawable):
