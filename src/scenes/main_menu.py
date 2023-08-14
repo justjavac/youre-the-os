@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from os import path
 import pygame
 from random import randint
@@ -57,7 +59,7 @@ class MainMenu(Scene):
         )
         self._scene_objects.append(how_to_play_button)
         
-        about_button = Button('关于', self._open_about_dialog)
+        about_button = Button(u'关于', self._open_about_dialog)
         about_button.view.set_xy(
             self._screen.get_width() - about_button.view.width - 150,
             self._screen.get_height() - about_button.view.height - 100
