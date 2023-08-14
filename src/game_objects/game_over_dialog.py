@@ -9,8 +9,8 @@ class GameOverDialog(GameObject):
         self.score = score
         super().__init__(GameOverDialogView(self))
         
-        self._playAgainButton = Button('Play Again', restart_game_fn)
-        self._mainMenuButton = Button('Main Menu', main_menu_fn)
+        self._playAgainButton = Button('再玩一次', restart_game_fn)
+        self._mainMenuButton = Button('主菜单', main_menu_fn)
                 
         self.children.append(self._playAgainButton)
         self.children.append(self._mainMenuButton)

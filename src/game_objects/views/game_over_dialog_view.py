@@ -13,9 +13,9 @@ class GameOverDialogView(Drawable):
         
         self._image = _shutdown_image
         
-        self._main_text_surface = FONT_PRIMARY_XXLARGE.render('YOU GOT REBOOTED!', False, Color.WHITE)
-        self._uptime_text_surface = FONT_PRIMARY_LARGE.render('UPTIME: ' + game_over_dialog.uptime, False, Color.WHITE)
-        self._score_text_surface = FONT_PRIMARY_LARGE.render('SCORE: ' + str(game_over_dialog.score), False, Color.WHITE)
+        self._main_text_surface = FONT_PRIMARY_XXLARGE.render('你重新启动了!', False, Color.WHITE)
+        self._uptime_text_surface = FONT_PRIMARY_LARGE.render('运行时间: ' + game_over_dialog.uptime, False, Color.WHITE)
+        self._score_text_surface = FONT_PRIMARY_LARGE.render('分数: ' + str(game_over_dialog.score), False, Color.WHITE)
 
     @property
     def width(self):

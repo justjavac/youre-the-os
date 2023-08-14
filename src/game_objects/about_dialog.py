@@ -9,7 +9,7 @@ class AboutDialog(GameObject):
     def __init__(self, close_fn):
         super().__init__(AboutDialogView(self))
         
-        self._close_button = Button('Close', close_fn)
+        self._close_button = Button('关闭', close_fn)
         self.children.append(self._close_button)
 
     def update(self, current_time, events):

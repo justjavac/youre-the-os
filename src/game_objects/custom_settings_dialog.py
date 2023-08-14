@@ -37,10 +37,10 @@ class CustomSettingsDialog(GameObject):
         self._num_ram_rows_selector.view.min_width = selector_width
         self._io_probability_selector.view.min_width = selector_width
         
-        self._start_button = Button('Start', start_fn)
+        self._start_button = Button('开始', start_fn)
         self.children.append(self._start_button)
         
-        self._cancel_button = Button('Cancel', cancel_fn)
+        self._cancel_button = Button('取消', cancel_fn)
         self.children.append(self._cancel_button)
 
     @property

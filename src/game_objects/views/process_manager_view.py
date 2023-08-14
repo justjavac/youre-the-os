@@ -10,7 +10,7 @@ class ProcessManagerView(Drawable):
         self._process_manager = process_manager
         super().__init__()
              
-        self._idle_processes_text_surface = FONT_PRIMARY_LARGE.render('Idle Processes :', False, Color.WHITE)
+        self._idle_processes_text_surface = FONT_PRIMARY_LARGE.render('空闲进程:', False, Color.WHITE)
         self._PROCESS_VIEW_HEIGHT = ProcessView(Process(0, process_manager.game)).height
 
     @property
@@ -22,7 +22,7 @@ class ProcessManagerView(Drawable):
         return WINDOW_HEIGHT
 
     def draw(self, surface):
-        terminated_processes_text = 'User Ragequits ({0} / {1}) :'.format(
+        terminated_processes_text = '用户终止进程 ({0} / {1}) :'.format(
             self._process_manager.user_terminated_process_count,
             self._process_manager.MAX_TERMINATED_BY_USER
         )

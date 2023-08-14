@@ -11,12 +11,12 @@ class CustomSettingsDialogView(Drawable):
         self._custom_settings_dialog = custom_settings_dialog
         super().__init__()
         
-        self._title_text = FONT_PRIMARY_XXLARGE.render('Custom Settings', True, Color.WHITE)
-        self._num_cpus_label_text = FONT_SECONDARY_MEDIUM.render('# CPUs', True, Color.WHITE)
-        self._num_processes_label_text = FONT_SECONDARY_MEDIUM.render('# Processes at startup', True, Color.WHITE)
-        self._num_ram_rows_label_text = FONT_SECONDARY_MEDIUM.render('# RAM Rows', True, Color.WHITE)
-        self._new_process_probability_label_text = FONT_SECONDARY_MEDIUM.render('New Process Probability', True, Color.WHITE)
-        self._io_probability_label_text = FONT_SECONDARY_MEDIUM.render('I/O Probability', True, Color.WHITE)
+        self._title_text = FONT_PRIMARY_XXLARGE.render('自定义设置', True, Color.WHITE)
+        self._num_cpus_label_text = FONT_SECONDARY_MEDIUM.render('# CPU 数量', True, Color.WHITE)
+        self._num_processes_label_text = FONT_SECONDARY_MEDIUM.render('# 启动时的进程数', True, Color.WHITE)
+        self._num_ram_rows_label_text = FONT_SECONDARY_MEDIUM.render('# RAM 行数', True, Color.WHITE)
+        self._new_process_probability_label_text = FONT_SECONDARY_MEDIUM.render('新建进程的概率', True, Color.WHITE)
+        self._io_probability_label_text = FONT_SECONDARY_MEDIUM.render('I/O 事件发生概率', True, Color.WHITE)
         
     @property
     def width(self):

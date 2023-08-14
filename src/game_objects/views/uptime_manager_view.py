@@ -9,11 +9,11 @@ class UptimeManagerView(Drawable):
 
     @property
     def width(self):
-        return FONT_PRIMARY_MEDIUM.size('Uptime : ' + self._uptime_manager.uptime_text)[0]
+        return FONT_PRIMARY_MEDIUM.size('运行时间 : ' + self._uptime_manager.uptime_text)[0]
 
     @property
     def height(self):
-        return FONT_PRIMARY_MEDIUM.size('Uptime : ' + self._uptime_manager.uptime_text)[1]
+        return FONT_PRIMARY_MEDIUM.size('运行时间 : ' + self._uptime_manager.uptime_text)[1]
 
     def draw(self, surface):
-        surface.blit(FONT_PRIMARY_MEDIUM.render('Uptime : ' + self._uptime_manager.uptime_text, False, Color.WHITE), (512 - self.width / 2, 10))
+        surface.blit(FONT_PRIMARY_MEDIUM.render('运行时间 : ' + self._uptime_manager.uptime_text, False, Color.WHITE), (512 - self.width / 2, 10))

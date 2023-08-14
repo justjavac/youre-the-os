@@ -1,52 +1,20 @@
-# You're the OS!
+# You're the OS! 你是操作系统！
 
-This is a game where you are the operating system of a computer.
-As such, you have to manage processes, memory and I/O events.
-Make sure not to leave processes idling for too long, or the user will get really impatient and reboot you!
+在这个游戏里，你是一台计算机的操作系统。
 
-You can play the game here: [https://plbrault.github.io/youre-the-os](https://plbrault.github.io/youre-the-os)
+因此，您必须管理进程、内存和 I/O 事件。
 
-Also available on [itch.io](https://drfreckles42.itch.io/youre-the-os).
+请确保不要让进程闲置太久，否则用户会非常不耐烦并重新启动你！
 
-![In-game screenshot](readme-assets/in_game_screenshot.png)
+你可以在这里玩: [https://justjavac.github.io/youre-the-os](https://justjavac.github.io/youre-the-os)
 
-## Prerequisites
+或者在这里 [denohub.com](https://youre-the-os.denohub.com).
 
-* Python 3.11
-* [pipenv](https://pypi.org/project/pipenv/)
-* An empty `.venv` directory at the root of the project
+![游戏截图](readme-assets/in_game_screenshot.png)
 
-## Usage
+## 特此声明
 
-**Install dependencies:** 
-
-```bash
-pipenv sync --dev
-```
-
-**Run as a desktop app:**
-
-```bash
-pipenv run desktop
-```
-
-**Run web version:**
-
-```bash
-pipenv run web
-```
-
-**Build web version without running:**
-
-```bash
-pipenv run web build
-```
-
-**Create `web.zip` archive for itch.io:**
-
-```bash
-pipenv run web archive
-```
+笨仓库是 <https://github.com/plbrault/youre-the-os> 的汉化。
 
 ## License
 

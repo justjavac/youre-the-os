@@ -10,7 +10,7 @@ class DifficultySelectionLabelView(Drawable):
         self._difficulty_selection_label = difficulty_selection_label
         super().__init__()
         
-        self._text = FONT_SECONDARY_MEDIUM.render("Select Difficulty :", True, Color.WHITE)
+        self._text = FONT_SECONDARY_MEDIUM.render("选择游戏难度:", True, Color.WHITE)
 
     @property
     def width(self):

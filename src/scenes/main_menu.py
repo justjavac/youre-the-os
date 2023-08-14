@@ -35,7 +35,7 @@ class MainMenu(Scene):
         self._scene_objects.append(difficulty_selection_label)
         
         difficulty_level_names = list(map(lambda difficulty_level: difficulty_level['name'], difficulty_levels))
-        difficulty_level_names.append('Custom')
+        difficulty_level_names.append('自定义')
         self._difficulty_selector = OptionSelector(difficulty_level_names, 1)
         self._difficulty_selector.view.set_xy(
             (self._screen.get_width() - self._difficulty_selector.view.width) / 2,
@@ -43,21 +43,21 @@ class MainMenu(Scene):
         )
         self._scene_objects.append(self._difficulty_selector)
         
-        play_button = Button('Play', self._on_start_button_click)
+        play_button = Button('开始', self._on_start_button_click)
         play_button.view.set_xy(
             (self._screen.get_width() - play_button.view.width) / 2,
             self._difficulty_selector.view.y + self._difficulty_selector.view.height + 20
         )
         self._scene_objects.append(play_button)
         
-        how_to_play_button = Button('How to Play', self._start_how_to_play)
+        how_to_play_button = Button('如何玩？', self._start_how_to_play)
         how_to_play_button.view.set_xy(
             150,
             self._screen.get_height() - how_to_play_button.view.height - 100
         )
         self._scene_objects.append(how_to_play_button)
         
-        about_button = Button('About', self._open_about_dialog)
+        about_button = Button('关于', self._open_about_dialog)
         about_button.view.set_xy(
             self._screen.get_width() - about_button.view.width - 150,
             self._screen.get_height() - about_button.view.height - 100

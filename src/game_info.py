@@ -1,3 +1,3 @@
-TITLE = "You're the OS!"
+TITLE = "你是操作系统!"
 VERSION = "1.1.0"
 COPYRIGHT_YEAR = "2023"
