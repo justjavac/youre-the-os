@@ -14,7 +14,7 @@
 
 ## 特此声明
 
-笨仓库是 <https://github.com/plbrault/youre-the-os> 的汉化。
+本仓库是 <https://github.com/plbrault/youre-the-os> 的汉化。
 
 ## License
 
