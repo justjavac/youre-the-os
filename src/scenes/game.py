@@ -57,7 +57,7 @@ class Game(Scene):
         self._uptime_manager = UptimeManager(self, pygame.time.get_ticks())
         self._scene_objects.append(self._uptime_manager)
         
-        open_in_game_menu_button = Button('菜单', self._open_in_game_menu)
+        open_in_game_menu_button = Button(u'菜单', self._open_in_game_menu)
         open_in_game_menu_button.view.set_xy(
             self._screen.get_width() - open_in_game_menu_button.view.width - 10,
             10
