@@ -18,7 +18,7 @@ class AboutDialogView(Drawable):
         self._copyright_text = FONT_SECONDARY_SMALL.render(u'© ' + COPYRIGHT_YEAR + ' Pier-Luc Brault，汉化：@justjavac', True, Color.WHITE)
         self._license_text = FONT_SECONDARY_XSMALL.render(u'此游戏是在 GPL V3 下发布的。<https://www.gnu.org/licenses/gpl-3.0.html>', True, Color.WHITE)
         self._asset_license_text = FONT_SECONDARY_XSMALL.render(u'Game assets are published under their own licenses.', True, Color.WHITE)
-        self._asset_license_details_text = FONT_SECONDARY_XSMALL.render(u'原始代码 <https://github.com/plbrault/youre-the-os>', True, Color.WHITE)
+        self._license_url_text = FONT_SECONDARY_XSMALL.render(u'原始代码 <https://github.com/plbrault/youre-the-os>', True, Color.WHITE)
         self._asset_license_details_text = FONT_SECONDARY_XSMALL.render(u'汉化代码 <https://github.com/justjavac/youre-the-os>', True, Color.WHITE)
         
     @property
